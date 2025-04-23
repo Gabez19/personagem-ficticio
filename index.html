@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Vilão - Que vilão de filme/série você seria?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Seu Lado Sombrio</h1>
+            <p>Descubra qual vilão icônico de filmes ou séries você seria</p>
+        </header>
+
+        <!-- Tela de Boas-vindas -->
+        <div class="welcome-screen active" id="welcome-screen">
+            <div class="welcome-description">
+                <h2>Bem-vindo ao teste "Seu Lado Sombrio"</h2>
+                <p>Todo mundo tem um lado obscuro, uma parte da personalidade que mantemos escondida do mundo. Mas e se você pudesse ser um dos grandes vilões do cinema ou da televisão?</p>
+                <p>Este teste analisará suas escolhas, motivações e valores para determinar qual vilão icônico mais se parece com você. Você seria um gênio manipulador, um vilão motivado por vingança ou um vilão que acha que está fazendo a coisa certa?</p>
+                <p>Responda às perguntas com sinceridade e descubra qual vilão famoso compartilha sua visão de mundo!</p>
+            </div>
+
+            <div class="kingdoms">
+                <div class="kingdom">
+                    <h3>Vilões Calculistas</h3>
+                    <p>Mestres da estratégia e manipulação. Pensam vários passos à frente e raramente perdem o controle emocional.</p>
+                </div>
+
+                <div class="kingdom">
+                    <h3>Vilões Trágicos</h3>
+                    <p>Personagens complexos cujas circunstâncias trágicas os conduziram à vilania. Frequentemente têm motivações compreensíveis.</p>
+                </div>
+
+                <div class="kingdom">
+                    <h3>Vilões Caóticos</h3>
+                    <p>Imprevisíveis e perturbadores. Não se importam com regras, normas sociais ou consequências - apenas querem ver o circo pegar fogo.</p>
+                </div>
+            </div>
+
+            <button class="start-btn" id="start-btn">Iniciar Questionário</button>
+        </div>
+
+        <!-- Tela de Questionário -->
+        <div class="quiz-screen" id="quiz-screen">
+            <div class="progress">
+                <p id="question-counter">Pergunta 1 de 10</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="question" id="question-container">
+                
+            </div>
+
+            <div class="progress-navigation">
+                <button class="back-btn" id="back-btn" style="display: none;">Voltar</button>
+                <button class="next-btn" id="next-btn">Próxima</button>
+            </div>
+        </div>
+
+
+        <div class="result-screen" id="result-screen">
+            <div class="result-content">
+                <h2>O vilão que você seria é:</h2>
+                <div class="character-image">
+                    <img id="character-image" src="https://sm.ign.com/ign_br/screenshot/default/an-loki-disney_mpp5.jpg" alt="Vilão">
+                </div>
+                <h3 class="character-name" id="character-name"></h3>
+                <div class="score-details">
+                    <p>Compatibilidade: <span id="character-score"></span>%</p>
+                </div>
+                <div class="character-description" id="character-description"></div>
+                <button class="reset-btn" id="reset-btn">Fazer o Teste Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
